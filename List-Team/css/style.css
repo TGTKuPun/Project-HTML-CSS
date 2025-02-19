@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Roboto", serif;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 205px;
+    line-height: 60px;
+    background: #2e80ce;
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    border-radius: 990px;
+}
+
+.section-heading {
+    color: #10375c;
+    font-size: 5rem;
+    /* font-weight: 1.2; */
+    letter-spacing: -1px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+/* ============== team ================ */
+.team {
+    padding: 85px 0;
+}
+
+.team-header {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.team__cta {
+    display: inline-block;
+    margin-top: 38px;
+}
+
+.team__list {
+    margin-top: 70px;
+    column-gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.team-item__thumb {
+    height: 360px;      
+    max-width: 100%;
+    object-fit: cover; /* tránh vỡ ảnh */
+    display: block;
+    transition: 0.4s;
+}
+
+
+.team-item__img-bg {
+    border-radius: 10px;
+    /* padding-top: 28px; */
+    overflow: hidden;
+}
+
+.team-item:hover .team-item__thumb {
+    transform: scale(1.1);
+}
+
+.team-item__name {
+    color: #10375c;
+    text-align: center;
+    line-height: 1.75;
+}
+
+.team-item__desc {
+    color: #575f66;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.86;
+}
+
+.control {
+    display: flex;
+    column-gap: 18px;
+    align-items: center;
+}
+
+.control__btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #575f66;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.control__btn:hover {
+    background: #2e80ce;
+    border-color: #2e80ce;
+}
+
+.control__btn img {
+    height: 12px;
+    width: 100%;
+}
+
+.team__control {
+    margin-top: 38px;
+    justify-content: center;
+}
+
+
